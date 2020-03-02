@@ -1,6 +1,7 @@
-<table>
+<table style="border: 1px solid black; margin: 2px;">
     <tr valign="top">
         <td><img src="{{ post.author.avatar(36) }}"></td>
         <td>{{ post.author.username }} says: <b>{{ post.body }}</b></td>
+        <td style="font-size: 10px;">{{ post.get_duration(post.timestamp) }}</td>
     </tr>
 </table>

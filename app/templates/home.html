@@ -16,6 +16,6 @@
 </form>
 
 {% for post in posts %}
-<div><p><b>{{ post.timestamp }}</b>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+    {% include '_post.html' %}
 {% endfor %}
 {% endblock %}
