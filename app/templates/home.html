@@ -16,6 +16,6 @@
 </form>
 
 {% for post in posts %}
-<div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+<div><p><b>{{ post.timestamp }}</b>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
 {% endfor %}
 {% endblock %}

@@ -9,6 +9,7 @@ from werkzeug.urls import url_parse
 @app.route('/', methods=['GET', 'POST'])
 @login_required
 def home():
+    print(current_user)
     form = PostForm()
     posts = Post.query.all()
     if form.validate_on_submit():
